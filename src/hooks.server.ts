@@ -9,6 +9,11 @@ export const handle = (async ({ event, resolve }) => {
         throw redirect(301, 'https://flipbookpdf.net/web/site/c65258e34fa8c03245de30e20dea5442ab03eec0202307.pdf.html')
     }
 
+
+    if (event.url.pathname === '/FpMulmed2023') {
+        return new Response("Masih Render yakk")
+    }
+
     const response = await resolve(event);
     return response;
 }) satisfies Handle;
