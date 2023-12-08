@@ -11,7 +11,7 @@ export const handle = (async ({ event, resolve }) => {
 
 
     if (event.url.pathname === '/FpMulmed2023') {
-        throw redirect(301, 'https://youtu.be/Q6JHJ1PCtm')
+        throw redirect(301, 'https://www.youtube.com/watch?v=Q6JHJ1PCtms')
 
     }
 
