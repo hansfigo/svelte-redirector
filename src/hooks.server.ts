@@ -11,7 +11,8 @@ export const handle = (async ({ event, resolve }) => {
 
 
     if (event.url.pathname === '/FpMulmed2023') {
-        return new Response("Masih Render yakk")
+        throw redirect(301, 'https://youtu.be/Q6JHJ1PCtm')
+
     }
 
     const response = await resolve(event);
